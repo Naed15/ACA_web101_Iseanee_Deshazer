@@ -1,0 +1,22 @@
+body{
+    background-color: lightcyan;
+}
+
+header{
+    text-align: center;
+    font-size-adjust: unset;
+    font-size: 20px;
+
+}
+
+#one{
+    font-size: 30px;
+    font-style: italic
+}
+#two{
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: brown;
+    text-align: center 
+
+}
