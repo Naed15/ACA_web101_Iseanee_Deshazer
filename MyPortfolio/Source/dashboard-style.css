@@ -121,7 +121,7 @@
 body {
 	background: url(https://static.pexels.com/photos/220182/pexels-photo-220182.jpeg);
 	background-color: #424242;
-	font-family: ‘Aldrich’;
+	font-family: ‘Aldrich;
 	font-size: 22px;
 }
 <<<<<<< HEAD
@@ -258,7 +258,7 @@ button:hover {
 	grid-area: 2 / 4 / 6 / 5;
 }
 <<<<<<< HEAD
-@media (min-width: 400px) {
+{} @media (min-width: 400px) {
 	.grid-container {
 		display: grid;
 		grid-row-start: auto;
@@ -410,7 +410,7 @@ button:hover {
 		height: 100%;
 		grid-area: 2 / 4 / 6 / 5;
 	}
-}
+
 @media (max-width: 800px) {
 	.grid-container {
 		display: grid;
