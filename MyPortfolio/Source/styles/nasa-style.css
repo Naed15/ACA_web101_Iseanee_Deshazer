@@ -1,0 +1,15 @@
+.main {
+	width: 850px;
+	height: 450px;
+	margin: 0 auto;
+	background-image: url(../images/nasa.jpg);
+}
+.section {
+	display: flex;
+	margin: 0 auto;
+}
+.article {
+	width: 270px;
+	height: 374px;
+	background-color: rgb(red, green, blue);
+}
