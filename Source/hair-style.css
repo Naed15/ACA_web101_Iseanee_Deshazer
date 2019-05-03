@@ -1,6 +1,6 @@
 body {
+	background-image: url(/images/brickwall.jpeg);
 	display: block;
-	background: #fff;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	font-weight: normal;
@@ -42,7 +42,6 @@ dir {
 	padding-inline-start: 40px;
 }
 #body > ul li a {
-	color: #000;
 	display: block;
 	font-family: poller_oneregular;
 	font-size: 20px;
