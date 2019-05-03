@@ -1,5 +1,5 @@
 body {
-	background-color: rgb(255, 255, 255);
+	background-image: url(/MyPortfolio/Source/images/brickwall.jpeg);
 	margin: 10%;
 }
 
@@ -13,6 +13,7 @@ header {
 	outline-style: double;
 	padding: 0.3%;
 	font-family: cursive;
+	color: white;
 }
 p {
 	font-size: 18px;
@@ -26,16 +27,18 @@ p {
 	font-size: 20px;
 	text-align: center;
 	padding: 0.5%;
-	background-color: lightgrey;
+	color: lightgrey;
 	font-family: cursive;
 }
 section {
 	padding: 2.5%;
+	color: white;
 }
 article {
 	font-family: cursive;
 	font-size: 20px;
 	font-feature-settings: "blwm";
+	color: white;
 }
 #column {
 	float: right;
@@ -45,4 +48,5 @@ article {
 }
 div {
 	text-align: center;
+	color: white;
 }
