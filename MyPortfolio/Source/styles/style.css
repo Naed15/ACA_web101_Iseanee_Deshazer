@@ -99,7 +99,7 @@ button {
 	font-style: italic;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
 	@media (max-width: 900px) {
 		#logo {
 			display: none;
