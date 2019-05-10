@@ -1,0 +1,35 @@
+body {
+	margin: 40px;
+	padding: 5px;
+	background-image: url(/MyPortfolio/Source/images/brickwall.jpeg);
+}
+
+header {
+	text-align: center;
+	margin: 40px;
+	color: lightblue;
+	font-style: oblique;
+	font-size: 30px;
+}
+img {
+	width: 300px;
+	height: 400px;
+}
+.first {
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 3px solid rgba(0, 0, 0, 0.8);
+	padding: 40px;
+	font-size: 30px;
+	text-align: center;
+}
+.second {
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 3px solid rgba(0, 0, 0, 0.8);
+	padding: 40px;
+	font-size: 30px;
+	text-align: center;
+}
