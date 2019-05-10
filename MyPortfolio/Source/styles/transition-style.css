@@ -13,7 +13,7 @@ body {
 .container:hover .even {
 	width: 25px;
 	height: 25px;
-	transition: all 4s;
+	transition: all 2s;
 	transform: translate(100px) rotate(360deg);
 }
 .odd {
