@@ -1,17 +1,18 @@
-var myLocation = document.getElementById("my-coordinates");
+var x = document.getElementById("demo");
 
 function getLocation() {
 	if (navigator.geolocation) {
-		navigator.geolocation.getCurrentPosition(displayPosition);
+		navigator.geolocation.getCurrentPosition(showPosition);
 	} else {
-		myLocation.innerHTML = "Not available";
+		x.innerHTML = "Geolocation is not supported by this browser.";
 	}
 }
 
-function displayPosition(position) {
-	myLocation.innerHTML =
-		"Longitude: " +
-		position.coords.longitude +
-		" Latitude: " +
-		position.coords.latitude;
+function showPosition(position) {
+	var x = document.getElementById("demo");
+	x.innerHTML =
+		"Latitude: " +
+		position.coords.latitude +
+		"<br>Longitude: " +
+		position.coords.longitude;
 }
