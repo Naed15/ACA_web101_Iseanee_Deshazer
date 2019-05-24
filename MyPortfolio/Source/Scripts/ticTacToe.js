@@ -1,10 +1,17 @@
-$(document).ready(function() {
-	function startGame() {
-		Document.turn = "x";
-		setMessage(document.turn + "gets to start.");
+
+function startGame() {
+
+}
+function setMessage(msg) {
+	// document.getElßementById("Messages").innerHTML = msg;
+}
+function nextMove() {
+	$(this).text = document.turn;
+}
+function switchTurn() {
+	if (document.turn == "x") {
+		document.turn = "O";
+	} else {
+		document.turn = X;
 	}
-	function setMessage(msg) {
-		document.getElementById("Messages").innerText = msg;
-	}
-	function nextMove(x) {}
-});
+\
