@@ -246,6 +246,9 @@ button:hover {
 	height: 100%;
 	grid-area: 2 / 4 / 6 / 5;
 }
+img {
+	width: 100px;
+}
 @media (min-width: 400px) {
 	.grid-container {
 		display: grid;
