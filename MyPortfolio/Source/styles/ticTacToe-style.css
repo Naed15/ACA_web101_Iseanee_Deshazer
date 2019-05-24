@@ -17,15 +17,6 @@ body {
 	text-align: center;
 	color: yellowgreen;
 }
-.x {
-	margin: 20px;
-	width: 40px;
-	height: 40px;
+button {
 	color: red;
-}
-.O {
-	margin: 20px;
-	width: 40px;
-	height: 40px;
-	color: blue;
 }

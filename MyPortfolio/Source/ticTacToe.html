@@ -5,25 +5,25 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Tic Tac Toe</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 		<script src="Scripts/ticTacToe.js"></script>
 		<link rel="stylesheet" href="./styles/ticTacToe-style.css" />
 	</head>
-	<body onload="startGame()">
+	<body>
 		<h1>May the odds be in your favor</h1>
 		<div class="Messages">X will go first</div>
 		<div class="container">
-			<div class="tic" onClick="nextMove();"></div>
-			<div class="tic" onClick="nextMove();"></div>
-			<div class="tic" onClick="nextMove();"></div>
-			<div class="tic" onClick="nextMove();"></div>
-			<div class="tic" onClick="nextMove();"></div>
-			<div class="tic" onClick="nextMove();"></div>
-			<div class="tic" onClick="nextMove();"></div>
-			<div class="tic" onClick="nextMove();"></div>
-			<div class="tic" onClick="nextMove()"></div>
+			<div class="tic" id="tic1" onClick="nextMove('tic1');"></div>
+			<div class="tic" id="tic2" onClick="nextMove('tic2');"></div>
+			<div class="tic" id="tic3" onClick="nextMove('tic3');"></div>
+			<div class="tic" id="tic4" onClick="nextMove('tic4');"></div>
+			<div class="tic" id="tic5" onClick="nextMove('tic5');"></div>
+			<div class="tic" id="tic6" onClick="nextMove('tic6');"></div>
+			<div class="tic" id="tic7" onClick="nextMove('tic7');"></div>
+			<div class="tic" id="tic8" onClick="nextMove('tic8');"></div>
+			<div class="tic" id="tic9" onClick="nextMove('tic9');"></div>
 		</div>
-		<button class="x" onClick="nextMove(square);">x</button>
-		<button class="x" onClick="nextMove(square);">o</button>
+		<button onClick="changeMarkerToX()">X</button>
+		<button onClick="changeMarkerToO()">O</button>
 	</body>
 </html>
