@@ -1,3 +1,22 @@
+$(function() {
+	let $list = $("ul");
+	let $newItemForm = $("#newItemForm");
+
+	$newItemForm.on("submit", function(e) {
+		e.preventDefault();
+		let text = $('input[type="text"]').val();
+		$list.append(`<li>${text}</li>`);
+		$('input[type="text"]').val("");
+	});
+
+	$list.on("click", "li", function() {
+		let $this = $(this);
+		$this.remove();
+	});
+});
+
+// Below this line is the javascript for the geo location //
+
 var x = document.getElementById("demo");
 
 function getLocation() {
