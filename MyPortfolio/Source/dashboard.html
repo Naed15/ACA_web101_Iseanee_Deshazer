@@ -4,128 +4,80 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Dashboard</title>
+		<script src="./Scripts/dashboard.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="./styles/dashboard-style.css" />
-		<script src="Scripts/todo.js"></script>
-		<title>dashboard-style</title>
 	</head>
-</html>
-<body>
-	<h1>Dashboard</h1>
-
-	<div class="grid-container">
-		<div>Time</div>
-		<div>Calculator</div>
-		<div class="calc">
-			<input type="text" id="display" name="display" readonly />
-			<input
-				class="button digits"
-				type="button"
-				value="7"
-				onclick="calculator.display.value += '7'"
-			/>
-			<input
-				class="button digits"
-				type="button"
-				value="8"
-				onclick="calculator.display.value += '8'"
-			/>
-			<input
-				class="button digits"
-				type="button"
-				value="9"
-				onclick="calculator.display.value += '9'"
-			/>
-			<input
-				class="button mathButtons"
-				type="button"
-				value="+"
-				onclick="calculator.display.value += ' + '"
-			/>
-			<br />
-			<input
-				class="button digits"
-				type="button"
-				value="4"
-				onclick="calculator.display.value += '4'"
-			/>
-			<input
-				class="button digits"
-				type="button"
-				value="5"
-				onclick="calculator.display.value += '5'"
-			/>
-			<input
-				class="button digits"
-				type="button"
-				value="6"
-				onclick="calculator.display.value += '6'"
-			/>
-			<input
-				class="button mathButtons"
-				type="button"
-				value="-"
-				onclick="calculator.display.value += ' - '"
-			/>
-			<br />
-			<input
-				class="button digits"
-				type="button"
-				value="1"
-				onclick="calculator.display.value += '1'"
-			/>
-			<input
-				class="button digits"
-				type="button"
-				value="2"
-				onclick="calculator.display.value += '2'"
-			/>
-			<input
-				class="button digits"
-				type="button"
-				value="3"
-				onclick="calculator.display.value += '3'"
-			/>
-			<input
-				class="button mathButtons"
-				type="button"
-				value="x"
-				onclick="calculator.display.value += ' * '"
-			/>
-			<br />
-			<input
-				id="clearButton"
-				class="button"
-				type="button"
-				value="C"
-				onclick="calculator.display.value = ''"
-			/>
-			<input
-				class="button digits"
-				type="button"
-				value="0"
-				onclick="calculator.display.value += '0'"
-			/>
-			<input
-				class="button mathButtons"
-				type="button"
-				value="="
-				onclick="calculator.display.value = eval(calculator.display.value)"
-			/>
-			<input
-				class="button mathButtons"
-				type="button"
-				value="/"
-				onclick="calculator.display.value += ' / '"
-			/>
-		</div>
-		<div>To Do</div>
-		<div class="loc">
-			Location
-			<div class="locs">
-				<p id="demo"></p>
-
-				<img onclick="getLocation()" src="./images/locate.svg.png" alt="" />
+	<body onload="startTime()">
+		<Header> Dashboard</Header>
+		<div class="container">
+			<article class="two">
+				Date & Time
+			</article>
+			<div class="one">
+					<div id="clockdate">
+							<div class="clockdate-wrapper">
+							  <div id="clock"></div>
+							  <div id="date"></div>
+							</div>
+						  </div>
 			</div>
+			<article class="three">
+				Calculator
+			</article>
+			<div class="one">
+					<FORM NAME="Calc">
+							<TABLE BORDER=4>
+							<TR>
+							<TD>
+							<INPUT TYPE="text"   NAME="Input" Size="16">
+							<br>
+							</TD>
+							</TR>
+							<TR>
+							<TD>
+							<INPUT TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'">
+							<INPUT TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">
+							<INPUT TYPE="button" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'">
+							<INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '">
+							<br>
+							<INPUT TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.Input.value += '4'">
+							<INPUT TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.Input.value += '5'">
+							<INPUT TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.Input.value += '6'">
+							<INPUT TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.Input.value += ' - '">
+							<br>
+							<INPUT TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'">
+							<INPUT TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'">
+							<INPUT TYPE="button" NAME="nine"  VALUE="  9  " OnClick="Calc.Input.value += '9'">
+							<INPUT TYPE="button" NAME="times" VALUE="  x  " OnClick="Calc.Input.value += ' * '">
+							<br>
+							<INPUT TYPE="button" NAME="clear" VALUE="  c  " OnClick="Calc.Input.value = ''">
+							<INPUT TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.Input.value += '0'">
+							<INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
+							<INPUT TYPE="button" NAME="div"   VALUE="  /  " OnClick="Calc.Input.value += ' / '">
+							<br>
+							</TD>
+							</TR>
+							</TABLE>
+							</FORM>
+
+			</div>
+			<article class="four">
+				Location
+			</article>
+			<div class="one">
+				
+				<img src ="images/locate.svg.png" >
+			</div>
+			<article class="five">
+				To Do List
+			</article>
+			<div class="one">w</div>
 		</div>
-	</div>
-</body>
+	</body>
+</htm
