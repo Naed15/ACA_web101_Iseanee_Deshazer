@@ -75,13 +75,11 @@ function weather() {
 		location.innerHTML = "Unable to retrieve your location";
 	}
 
-	location.innerHTML = "Locating...";
+	location.innerHTML = "Locating";
 }
 
-weather();
-
 // this is for the geolocation //
-var x = document.getElementById("one");
+var x = document.getElementById("demo");
 
 function getLocation() {
 	if (navigator.geolocation) {
@@ -92,6 +90,7 @@ function getLocation() {
 }
 
 function showPosition(position) {
+	var x = document.getElementById("demo");
 	x.innerHTML =
 		"Latitude: " +
 		position.coords.latitude +
