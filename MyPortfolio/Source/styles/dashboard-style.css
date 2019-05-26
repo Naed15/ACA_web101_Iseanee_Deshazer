@@ -2,6 +2,8 @@ body {
 	background-color: lightskyblue;
 }
 header {
+	width: 100%;
+	height: 100%;
 	font-family: "Cute Font", cursive;
 	font-size: 75px;
 	text-align: center;
@@ -12,10 +14,8 @@ header {
 }
 .container {
 	display: grid;
-	grid-row: auto;
+	grid-row: 1 2 3 4 auto;
 	margin-left: 41px;
-	width: 90%;
-	height: 90%;
 	border: 3px solid;
 	color: white;
 	border-radius: 3%;
@@ -34,24 +34,24 @@ header {
 	text-align: center;
 	border-radius: 5px;
 	margin: 0 auto;
-	margin-top: 5%;
+	margin-top: 25%;
 	margin-bottom: 5%;
 }
 
 #clock {
 	background-color: lightsalmon;
-
+	margin-top: 5%;
 	font-family: sans-serif;
-	font-size: 60px;
+	font-size: 30px;
 	text-shadow: 0px 0px 1px #fff;
 	color: #fff;
 }
 #clock span {
 	color: #888;
 	text-shadow: 0px 0px 1px #333;
-	font-size: 30px;
+	font-size: 10px;
 	position: relative;
-	top: -27px;
+	top: -17px;
 	left: -10px;
 }
 #date {
@@ -78,21 +78,67 @@ header {
 	font-size: 40px;
 	font-family: "Cute Font", cursive;
 }
-.Calc {
+form .Calc {
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
 .one {
 	display: grid;
-	grid-row: 8;
-	width: 100%;
-	height: 100%;
+	grid-row: 4;
 	border: 2px solid;
 	position: center;
 }
 img {
-	height: 100px;
-	width: 100px;
+	height: 40%;
+	width: 150px;
 	margin-top: 5%;
 	margin-bottom: 5%;
+}
+ul {
+	position: center;
+	list-style-position: none;
+}
+li {
+	background-color: white;
+	color: lightsalmon;
+	font-size: 20px;
+	font-family: "Cute Font", cursive;
+	list-style-type: none;
+	width: 80%;
+	position: center;
+	border-radius: 2px;
+	border: 2px solid;
+}
+
+input[type="text"] {
+	font-size: 15px;
+	padding: 5px;
+	border: 2px solid lightsalmon;
+	border-radius: 5px;
+}
+input[type="submit"] {
+	background-color: #fff;
+	color: white;
+	border-radius: 5px;
+	border: 2px solid black;
+	padding: 15px;
+}
+.add {
+	font-size: 20px;
+	font-family: "Cute Font", cursive;
+	list-style-type: none;
+	width: 80%;
+	position: center;
+	border-radius: 2px;
+	border: 2px solid;
+}
+#newItemButton {
+	display: none;
+	text-align: center;
+}
+
+#itemField {
+	margin-top: 10px;
+	margin-left: 5%;
+	width: 30%;
 }
